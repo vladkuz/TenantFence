@@ -5,11 +5,18 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <AllowMissingPrunePackageData>true</AllowMissingPrunePackageData>
+    
+    <!-- Package metadata -->
     <PackageId>TenantFence.EFCore</PackageId>
     <Version>0.1.0</Version>
-    <Authors>Vlad Kuznegtsov</Authors>
-    <Description>EF Core multi-tenancy correctness utilities.</Description>
-    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <Authors>Vlad Kuznetsov</Authors>
+    <Description>Enforce tenant isolation for EF Core change-tracked writes. Prevents cross-tenant data access by validating all SaveChanges operations against the active tenant context.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/vladkuz/TenantFence</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/vladkuz/TenantFence</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>efcore;multi-tenancy;tenant-isolation;saas;security</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\\LICENSE" Pack="true" PackagePath="" />
+    <None Include="..\\README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>
